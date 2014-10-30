@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de Bootstrap - Modulo 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/template.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    .container {
+      max-width: 100%;
+    }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h4><a class="brand" href="#">B2B - Curso de Bootstrap</a></h4>
+            </div>
+          
+          <div class="collapse navbar-collapse navbar-ex1-collapse pull-left">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Contatos</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="pull-right margin-right: 15px;">
+            <span id="botao-carrinho" style="margin-right: 10px;"><a href="#" id="meu-carrinho" class="btn btn-info" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Nenhum produto no Carrinho por Enquanto. <br><br><a class='btn btn-success' href='#'>Comprar Produtos</a>" title="" data-original-title="Carrinho de Compras">Meu Carrinho</a></span>
+            <span style="vertical-align: middle; padding-right: 10px;">André Andrade</span>
+            <img src="http://placehold.it/40x40" class="img-circle" style="margin-top: 5px; margin-bottom: 5px;">
+          </div>
+    </div>
+
+    <div class="container" style="margin-top: 80px;">
+      <div class="row">
+        <div class="col-md-2">
+          <p><img src="http://placehold.it/203x180"></p>
+          <br>
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <a href="index.html"><img src="img/dashboard.png"> Dashboard</a>
+            </li>
+            <li class="active"><a href="#"><img src="img/faq.png"> Sistema de faqs</a></li>
+            <li><a href="comprar.html"><img src="img/comprar.png"> Comprar produtos</a></li>
+            <li><a href="carrinho.html"><img src="img/carrinho2.png"> Carrinho de Compras</a></li>
+            <li><a href="login.html"><img src="img/sair.png"> Sair</a></li>
+          </ul>
+        </div>
+        <div class="col-md-10">
+          <h1>Sistema B2B - Perguntas e Respostas</h1>
+          <div class="panel-group" id="accordion2">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse1">
+                    Primeira pergunta do Sistema de Faq?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <img src="img/desktop.png" style="float: left; margin-right: 10px; margin-bottom: 10px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et mauris mi. Donec dapibus rutrum turpis, in posuere augue. Proin dictum non nunc quis fringilla. Nulla id mattis erat. Pellentesque tempor odio sit amet urna scelerisque, vel dapibus ligula lacinia. Integer gravida leo magna, a dictum nisi malesuada vel. In consequat ornare enim, vel tristique lectus pellentesque commodo. Etiam imperdiet tincidunt diam, vitae blandit sem dignissim ut. Vestibulum lobortis in tellus ac mattis. Quisque ac eros velit. Mauris dictum, magna quis faucibus cursus, purus est adipiscing ante, eu iaculis magna justo non leo.</p>
+                  <p>Pellentesque aliquet tortor urna, a volutpat est consectetur nec. Aenean imperdiet, justo vitae vehicula dapibus, eros purus fringilla orci, sed fermentum lacus magna a nisi. Nullam nec scelerisque augue. Maecenas vehicula neque eget lacus convallis varius semper sit amet ipsum. Maecenas mollis nisi quis ante laoreet auctor. Sed vehicula est vel lectus dignissim sagittis. Donec mattis hendrerit neque in aliquet. Pellentesque varius vel lacus ut vehicula.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+                    Primeira pergunta do Sistema de Faq?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <img src="img/desktop.png" style="float: left; margin-right: 10px; margin-bottom: 10px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et mauris mi. Donec dapibus rutrum turpis, in posuere augue. Proin dictum non nunc quis fringilla. Nulla id mattis erat. Pellentesque tempor odio sit amet urna scelerisque, vel dapibus ligula lacinia. Integer gravida leo magna, a dictum nisi malesuada vel. In consequat ornare enim, vel tristique lectus pellentesque commodo. Etiam imperdiet tincidunt diam, vitae blandit sem dignissim ut. Vestibulum lobortis in tellus ac mattis. Quisque ac eros velit. Mauris dictum, magna quis faucibus cursus, purus est adipiscing ante, eu iaculis magna justo non leo.</p>
+                  <p>Pellentesque aliquet tortor urna, a volutpat est consectetur nec. Aenean imperdiet, justo vitae vehicula dapibus, eros purus fringilla orci, sed fermentum lacus magna a nisi. Nullam nec scelerisque augue. Maecenas vehicula neque eget lacus convallis varius semper sit amet ipsum. Maecenas mollis nisi quis ante laoreet auctor. Sed vehicula est vel lectus dignissim sagittis. Donec mattis hendrerit neque in aliquet. Pellentesque varius vel lacus ut vehicula.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+                    Primeira pergunta do Sistema de Faq?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <img src="img/desktop.png" style="float: left; margin-right: 10px; margin-bottom: 10px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et mauris mi. Donec dapibus rutrum turpis, in posuere augue. Proin dictum non nunc quis fringilla. Nulla id mattis erat. Pellentesque tempor odio sit amet urna scelerisque, vel dapibus ligula lacinia. Integer gravida leo magna, a dictum nisi malesuada vel. In consequat ornare enim, vel tristique lectus pellentesque commodo. Etiam imperdiet tincidunt diam, vitae blandit sem dignissim ut. Vestibulum lobortis in tellus ac mattis. Quisque ac eros velit. Mauris dictum, magna quis faucibus cursus, purus est adipiscing ante, eu iaculis magna justo non leo.</p>
+                  <p>Pellentesque aliquet tortor urna, a volutpat est consectetur nec. Aenean imperdiet, justo vitae vehicula dapibus, eros purus fringilla orci, sed fermentum lacus magna a nisi. Nullam nec scelerisque augue. Maecenas vehicula neque eget lacus convallis varius semper sit amet ipsum. Maecenas mollis nisi quis ante laoreet auctor. Sed vehicula est vel lectus dignissim sagittis. Donec mattis hendrerit neque in aliquet. Pellentesque varius vel lacus ut vehicula.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; Curso de Bootstrap 2013 - Todos os direitos reservados</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Arquivos Javascripts
+    ================================================== -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>  
+      $(function ()  
+      { $("#meu-carrinho").popover();  
+      });  
+      </script>
+
+  </body>
+</html>

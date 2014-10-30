@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de Bootstrap - Modulo 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/template.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    .container {
+      max-width: 100%;
+    }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Navegação</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h4><a class="brand" href="#">B2B - Curso de Bootstrap</a></h4>
+            </div>
+          
+          <div class="collapse navbar-collapse navbar-ex1-collapse pull-left">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Contatos</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="pull-right margin-right: 15px;">
+            <span id="botao-carrinho" style="margin-right: 10px;"><a href="#" id="meu-carrinho" class="btn btn-info" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Nenhum produto no Carrinho por Enquanto. <br><br><a class='btn btn-success' href='#'>Comprar Produtos</a>" title="" data-original-title="Carrinho de Compras">Meu Carrinho</a></span>
+            <span style="vertical-align: middle; padding-right: 10px;">André Andrade</span>
+            <img src="http://placehold.it/40x40" class="img-circle" style="margin-top: 5px; margin-bottom: 5px;">
+          </div>
+    </div>
+
+    <div class="container" style="margin-top: 80px;">
+      <div class="row">
+        <div class="col-md-2">
+          <p><img src="http://placehold.it/203x180"></p>
+          <br>
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <a href="index.html"><img src="img/dashboard.png"> Dashboard</a>
+            </li>
+            <li><a href="faq.html"><img src="img/faq.png"> Sistema de Faqs</a></li>
+            <li class="active"><a href="comprar.html"><img src="img/comprar.png"> Comprar produtos</a></li>
+            <li><a href="carrinho.html"><img src="img/carrinho2.png"> Carrinho de Compras</a></li>
+            <li><a href="login.html"><img src="img/sair.png"> Sair</a></li>
+          </ul>
+        </div>
+        <div class="col-md-10">
+          <h1>Sistema B2B - Todos os Produtos</h1>
+          <div class="navbar navbar-default">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Categoria 1</a></li>
+                <li><a href="#">Categoria 2</a></li>
+                <li><a href="#">Categoria 3</a></li>
+              </ul>
+
+              <ul class="nav pull-right" style="margin: 5px 10px 0px 10px;">
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                  <a href="#" data-toggle="dropdown">Filtrar por: <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="#">Menor Valor</a></li>
+                      <li><a href="#">Maior Valor</a></li>
+                      <li><a href="#">Mais Comprados</a></li>
+                      <li><a href="#">Mais Novos</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <form class="navbar-search pull-right" action="">
+                <input type="text" class="form-control" placeholder="Buscar Produtos">
+              </form>
+          </div>
+          <div class="row">
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="thumbnail">
+                  <img alt="300x200" src="http://placehold.it/255x200/F0F0F0">
+                  <div class="caption">
+                    <h3>Nome do Produto</h3>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+                    <h4>R$ 230,00 <span style="font-size: 11px;">ou 10X de R$ 23,00</span></h4>
+                    <p><a href="#" class="btn btn-info"><i class="icon-shopping-cart icon-white"></i> Comprar</a> <a href="#" class="btn">Ver Detalhes &rarr;</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div>
+            <ul class="pagination">
+              <li><a href="#">Prev</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; Curso de Bootstrap 2013 - Todos os direitos reservados</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Arquivos Javascripts
+    ================================================== -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>  
+      $(function ()  
+      { $("#meu-carrinho").popover();  
+      });  
+      </script>
+
+  </body>
+</html>
