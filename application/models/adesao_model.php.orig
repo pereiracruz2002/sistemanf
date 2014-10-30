@@ -1,0 +1,312 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Adesao_model extends MY_Model
+{
+    var $id_col = 'id_adesao';
+
+    var $fields = array(
+
+            'id_adesao' => array(
+                'type' => 'hidden',
+                'label' => '',
+                'class' => '',
+                'label_class' => 'col-md-2',
+                'prepend' => '<div class="col-md-10">',
+                'append' => '</div>',
+                'values' => array(),
+                //        'from' => array('model' => 'usuario', 'value' => 'nome')
+                ),       
+            'id_produtor' => array(
+                'type' => 'hidden',
+                'label' => '',
+                'class' => '',
+                'rules' => 'required',
+                'label_class' => 'col-md-2',
+                'prepend' => '<div class="col-md-10">',
+                'append' => '</div>',
+                'values' => array(),
+                //        'from' => array('model' => 'usuario', 'value' => 'nome')
+                ),       
+            'id_solucao' => array(
+                    'type' => 'select',
+                    'label' => 'Solução',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-10">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    'from' => array('model' => 'solucao', 'value' => 'solucao')
+                    ), 
+            'controle' => array(
+                    'type' => 'text',
+                    'label' => 'Código de controle',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'id_cultura' => array(
+                    'type' => 'select',
+                    'label' => 'Cultura',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    'from' => array('model' => 'cultura', 'value' => 'cultura')
+                    ),      
+            'area_contratada' => array(
+                    'type' => 'text',
+                    'label' => 'Área contratada',
+                    'class' => '',
+                    'rules' => 'required|numeric',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div><div class="form-control-static">ha</div>',
+                    'values' => array(),
+                    ),   
+            'area_total' => array(
+                    'type' => 'text',
+                    'label' => 'Área total',
+                    'class' => '',
+                    'rules' => 'required|numeric',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div><div class="form-control-static">ha</div>',
+                    'values' => array(),
+                    ),   
+            'variedade' => array(
+                    'type' => 'text',
+                    'label' => 'Variedade',
+                    'class' => '',
+                    'rules' => '',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2 variedade solucao_producao">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'hibrido' => array(
+                    'type' => 'text',
+                    'label' => 'Híbrido',
+                    'class' => '',
+                    'rules' => '',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2 hibrido solucao_producao">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'cultivar' => array(
+                    'type' => 'text',
+                    'label' => 'Cultivar',
+                    'class' => '',
+                    'rules' => '',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-2 cultivar solucao_producao">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'data_plantio' => array(
+                    'type' => 'text',
+                    'label' => 'Data do plantio',
+                    'class' => 'data',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-3',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div>',
+                    'extra' => array('class' => 'datepicker')
+                    ),   
+            'data_colheita' => array(
+                    'type' => 'text',
+                    'label' => 'Data da colheita',
+                    'class' => 'data',
+                    'rules' => '',
+                    'label_class' => 'col-md-3',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div>',
+                    'extra' => array('class' => 'datepicker')
+                    ),   
+            'produtividade_padrao' => array(
+                    'type' => 'text',
+                    'label' => 'Produtividade padrão',
+                    'class' => '',
+                    'rules' => '',
+                    'label_class' => 'col-md-3',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'produtividade_pin' => array(
+                    'type' => 'text',
+                    'label' => 'Produtividade PIN',
+                    'class' => '',
+                    'rules' => '',
+                    'label_class' => 'col-md-3',
+                    'prepend' => '<div class="col-md-2">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'certificacao_consultor' => array(
+                    'type' => 'select',
+                    'label' => 'Certificação do consultor',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-10">',
+                    'append' => '</div>',
+                    'values' => array("SIM"=>"SIM","NÃO"=>"NÃO"),
+                    ),   
+            'observacao_consultor' => array(
+                    'type' => 'text',
+                    'label' => 'Observação do consultor',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-10">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            'certificacao_rtv' => array(
+                    'type' => 'select',
+                    'label' => 'Certificação do RTV',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-10">',
+                    'append' => '</div>',
+                    'values' => array("SIM"=>"SIM","NÃO"=>"NÃO"),
+                    ),   
+            'observacao_rtv' => array(
+                    'type' => 'text',
+                    'label' => 'Observação do RTV',
+                    'class' => '',
+                    'rules' => 'required',
+                    'label_class' => 'col-md-2',
+                    'prepend' => '<div class="col-md-10">',
+                    'append' => '</div>',
+                    'values' => array(),
+                    ),   
+            );
+    
+    public function _filter_pre_save(&$data) 
+    {
+        if(isset($data['data_plantio']))
+            $data['data_plantio'] = formata_data($data['data_plantio']);
+        if(isset($data['data_colheita']))
+            $data['data_colheita'] = formata_data($data['data_colheita']);
+
+    }
+
+    function buscarMinhasAdesoesPorProdutorId($id_produtor) {
+        $where = array(
+                "adesao.id_produtor" => $id_produtor
+                );
+        $join = array(
+                "solucao" => "solucao.id_solucao = adesao.id_solucao",
+                "cultura" => "cultura.id_cultura = adesao.id_cultura",
+                "produtor" => "produtor.id_produtor=adesao.id_produtor",
+                "usuario as consultor" => "consultor.id_usuario=produtor.id_usuario_consultor",
+                "usuario as rtv" => "rtv.id_usuario=produtor.id_usuario_rtv OR rtv.id_usuario=produtor.id_usuario_rtv_auxiliar" 
+                );
+        $select = "adesao.*, solucao.*, cultura.*, produtor.produtor, consultor.nome as consultor, rtv.nome as rtv";
+        $adesoes = $this->search($where, 1, 500, $select, $join);
+        return $adesoes['resultados'];
+    }
+    function buscarAdesaoPorId($id_adesao) {
+        $where = array(
+                "id_adesao" => $id_adesao
+                );
+        $join = array(
+                "solucao" => "solucao.id_solucao = adesao.id_solucao",
+                "cultura" => "cultura.id_cultura = adesao.id_cultura",
+                "produtor" => "produtor.id_produtor=adesao.id_produtor",
+                "cultivares_ciclos" =>"cultivares_ciclos.id_cultivares_ciclos=adesao.id_cultivares_ciclos"
+                );
+        $adesoes = $this->search($where, 1, 1, "*", $join);
+        return $adesoes['resultados'][0];
+    }
+
+    public function report($filtros) 
+    {
+        $this->db->select('adesao.*, 
+                produtor.*,
+                categoria.categoria,
+                solucao.solucao,
+                cultura.cultura,
+                consultor.nome as consultor,
+                rtv.nome as rtv
+                ')
+            ->join('produtor', 'produtor.id_produtor=adesao.id_produtor')
+            ->join('categoria', 'categoria.id_categoria=produtor.id_categoria')
+            ->join('solucao', 'solucao.id_solucao=adesao.id_solucao')
+            ->join('cultura', 'cultura.id_cultura=adesao.id_cultura')
+            ->join('usuario as consultor', 'consultor.id_usuario=produtor.id_usuario_consultor')
+            ->join('usuario as rtv', 'rtv.id_usuario=produtor.id_usuario_rtv OR rtv.id_usuario=produtor.id_usuario_rtv_auxiliar')
+            ->group_by('id_adesao');
+        foreach ($filtros as $filtro => $valor) {
+            if($filtro != 'id_perfil'){
+                if($valor){
+                    $col = (strstr($filtro, '.') ? $filtro : 'adesao.'.$filtro);
+                    $this->db->where($col, $valor);
+                }
+            }
+        }
+        if($filtros['id_perfil']){
+            foreach ($filtros['id_perfil'] as $id_perfil => $id_usuario) {
+                if($id_usuario){
+                    if($id_perfil == 2){
+                        $this->db->where('produtor.id_usuario_consultor', $id_usuario);
+                    }
+                    if($id_perfil == 4){
+                        $this->db->where('( produtor.id_usuario_rtv = ', $id_usuario)
+                                ->or_where('produtor.id_usuario_rtv_auxiliar', $id_usuario);
+<<<<<<< HEAD
+                                $this->db->ar_where[] = ')';
+                                }
+                                }
+                                }
+
+                                }
+
+                                $resultado = $this->get_all()->result();
+                                $this->load->library('table', array(), 'lib_table');
+         $this->lib_table->set_heading(array('#','Adesão', 'Produtor', 'Consultor', 'RTV', 'Solução', 'Cultura'));
+                                foreach ($resultado as $item) {
+            $this->lib_table->add_row('<div class="dropdown dropup">
+                            <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Ações <span class="caret"></span></button>
+                             <ul class="dropdown-menu" role="menu">
+                               <li><a href="'.site_url("/adesao/visualizar/")."/".$item->id_produtor.'/'.$item->id_adesao.'">Visualizar</a></li>
+                               <li><a href="'.site_url("/adesao/editar/")."/".$item->id_produtor.'/'.$item->id_adesao.'">Editar</a></li> 
+                               <li><a href="'.site_url("/adesao/editar_resultado/")."/".$item->id_produtor.'/'.$item->id_adesao.'">Editar resultado</a></li> 
+                               <li><a href="'.site_url("/adesao/consultor_avaliar/")."/".$item->id_produtor.'/'.$item->id_adesao.'">Consultor Avaliar</a></li>
+                               <li><a href="'.site_url("/adesao/rtv_avaliar/")."/".$item->id_produtor.'/'.$item->id_adesao.'">RTV Avaliar</a></li>
+                               <li><a href="'.site_url("/adesao/exclur/")."/".$item->id_produtor.'/'.$item->id_adesao.'">Excluir</a></li>
+                            </ul>
+                        </div>','<a href="'.site_url('adesao/visualizar/'.$item->id_produtor.'/'.$item->id_adesao).'">'.$item->controle.'</a>', $item->produtor, $item->consultor, $item->rtv, $item->solucao, $item->cultura);
+                                }
+
+                                return $this->lib_table->generate();
+                                }
+                                }
+=======
+                        $this->db->ar_where[] = ')';
+                   }
+               }
+            }
+               
+        }
+        $resultado = $this->get_all()->result();
+        $this->load->library('table', array(), 'lib_table');
+        $this->lib_table->set_heading(array('#','Adesão', 'Produtor', 'Consultor', 'RTV', 'Solução', 'Cultura'));
+        foreach ($resultado as $item) {
+              $this->lib_table->add_row('<a class="btn btn-success" href="'.site_url("/adesao/editar_resultado/")."/".$item->id_produtor.'/'.$item->id_adesao.'">Editar resultado</a>','<a href="'.site_url('adesao/visualizar/'.$item->id_produtor.'/'.$item->id_adesao).'">'.$item->controle.'</a>', $item->produtor, $item->consultor, $item->rtv, $item->solucao, $item->cultura);
+            
+        }
+        
+        return $this->lib_table->generate();
+    }
+}
+>>>>>>> ab59852e0e8797d49107be67c2e0cb855f884d92

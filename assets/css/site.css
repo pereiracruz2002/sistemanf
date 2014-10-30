@@ -1,0 +1,215 @@
+/*
+ * Base structure
+ */
+.form-inline .width-input {
+  width: 18%;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+/*
+ * Sidebar
+ */
+ .container-nav .sidebar{
+    background-color: #597936;
+    color: #fff;
+    padding-right: 0;
+    padding-top: 44px;
+    width: 20%;
+    margin-right: 32px;
+ }
+.container-nav .efect-nav::before{
+  content: '';
+  display: block;
+  float: right;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border-left: 10px solid #A4C443;
+  border-right: 5px solid transparent;
+  border-bottom: 3px solid #A4C443;
+  border-top: 5px solid transparent;
+}
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -15px; /* 20px padding + 1px border */
+  margin-left: -15px;
+  margin-bottom:20px;
+}
+.nav-sidebar li{
+  background: #A4C443;
+  margin-bottom: 20px;
+
+}
+.nav-sidebar > li > a {
+  color:#fff;
+}
+.nav-sidebar > li > a:hover,
+.nav-sidebar > li > a:focus,
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #7fa50d;
+}
+.nav-sidebar > .efect-nav:hover::before,
+.nav-sidebar > .active::before{
+  border-left: 10px solid #7fa50d;
+  border-bottom: 3px solid #7fa50d;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+.banner-home img{
+  width: 601px;
+  height: 295px;
+}
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.well,
+.well a{
+    color:#fff;
+}
+
+#home_lateral{
+  height: 295px;
+  text-align: center;
+}
+
+#home_lateral h3{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.marginLeft30{
+  margin-left: -15px;
+}
+
+.padTop30{
+  padding-top:30px;
+}
+
+.padBottom30{
+  padding-bottom: 30px;
+}
+
+.btVerde{
+  background-color: #A4C443;
+  border-color:#A4C443;
+  text-transform: uppercase;
+}
+
+.btn-inverse{
+  background-color: #000;
+  color:#fff;
+  border-color:#333;
+}
+
+.btn-inverse:hover, .btn-inverse.disabled{
+  color:#FFF;
+}
+
+.titulo-verde{
+  background-color: #A4C443;
+  color:#FFF;
+  font-size: 26px;
+  padding:5px;
+  text-transform: uppercase;
+}
+
+.destaque{
+  font-weight: bold;
+  color:#597936;
+}
+
+.cinza{
+  color:#999; 
+}
+
+.destaque-cinza{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+#pin_lateral{height:165px;}
+
+.bg-warning{
+    background:#FBB414;
+}
+.well .nome{
+    display:inline-block;
+    margin:0 10px;
+}
+.col-md-20{
+    width:18%;
+    float:left;
+    margin:1%;
+}
+
+.paddLeft35{
+  padding-left: 35px;
+}
+.wine{
+  margin-top:30px;
+}
+
+.cabecalho{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-horizontal .form-group .padTop10{
+  padding-top:13px;
+}
+
+.relatorios-adesao .table,.relatorios-produtor .table,.relatorios-pessoa_fisica .table,.relatorios-resultados .table{
+  display: none;
+}
+
+.paddingRight170{
+  padding-right: 170px;
+}
+
+.marginTop30{
+  margin-top: 20px;
+}
+
